@@ -1,0 +1,53 @@
+{
+	"actions": [],
+	"doctype": "DocType",
+	"editable_grid": 1,
+	"engine": "InnoDB",
+	"field_order": [
+		"activity_datetime",
+		"activity_type",
+		"hours_spent",
+		"notes",
+		"activity_reference"
+	],
+	"fields": [
+		{
+			"fieldname": "activity_datetime",
+			"fieldtype": "Datetime",
+			"label": "Activity Date-Time",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "activity_type",
+			"fieldtype": "Select",
+			"label": "Activity Type",
+			"options": "Work\nCall\nMeeting\nTravel\nAdmin",
+			"default": "Work",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "hours_spent",
+			"fieldtype": "Float",
+			"label": "Hours Spent",
+			"default": "0",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "notes",
+			"fieldtype": "Small Text",
+			"label": "Notes"
+		},
+		{
+			"fieldname": "activity_reference",
+			"fieldtype": "Data",
+			"label": "Activity Reference"
+		}
+	],
+	"istable": 1,
+	"module": "Omnexa Services",
+	"name": "Service Ticket Activity",
+	"permissions": []
+}

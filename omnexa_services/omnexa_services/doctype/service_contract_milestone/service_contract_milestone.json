@@ -1,0 +1,68 @@
+{
+	"actions": [],
+	"doctype": "DocType",
+	"editable_grid": 1,
+	"engine": "InnoDB",
+	"field_order": [
+		"milestone_title",
+		"due_date",
+		"amount",
+		"column_break_omnexa_1",
+		"status",
+		"sales_invoice",
+		"milestone_reference"
+	],
+	"fields": [
+		{
+			"fieldname": "milestone_title",
+			"fieldtype": "Data",
+			"label": "Milestone",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "due_date",
+			"fieldtype": "Date",
+			"label": "Due Date",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "amount",
+			"fieldtype": "Currency",
+			"label": "Amount",
+			"reqd": 1,
+			"default": "0",
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "status",
+			"fieldtype": "Select",
+			"label": "Status",
+			"options": "Pending\nInvoiced\nCancelled",
+			"default": "Pending",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "sales_invoice",
+			"fieldtype": "Link",
+			"label": "Sales Invoice",
+			"options": "Sales Invoice",
+			"read_only": 1
+		},
+		{
+			"fieldname": "milestone_reference",
+			"fieldtype": "Data",
+			"label": "Milestone Reference"
+		},
+		{
+			"fieldname": "column_break_omnexa_1",
+			"fieldtype": "Column Break"
+		}
+	],
+	"istable": 1,
+	"module": "Omnexa Services",
+	"name": "Service Contract Milestone",
+	"permissions": []
+}

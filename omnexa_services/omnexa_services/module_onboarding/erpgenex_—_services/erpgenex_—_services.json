@@ -1,0 +1,29 @@
+{
+ "allow_roles": [
+  {
+   "role": "Desk User"
+  },
+  {
+   "role": "System Manager"
+  }
+ ],
+ "creation": "2026-04-20 00:31:42.760395",
+ "docstatus": 0,
+ "doctype": "Module Onboarding",
+ "documentation_url": "https://frappe.io/framework",
+ "idx": 0,
+ "is_complete": 0,
+ "modified": "2026-07-11 14:37:33.103556",
+ "modified_by": "Administrator",
+ "module": "Omnexa Services",
+ "name": "ERPGENEX \u2014 Services",
+ "owner": "Administrator",
+ "steps": [
+  {
+   "step": "ERPGENEX-WS-services-home"
+  }
+ ],
+ "subtitle": "Guided setup for this workspace.",
+ "success_message": "You are ready to work in Services.",
+ "title": "Services"
+}

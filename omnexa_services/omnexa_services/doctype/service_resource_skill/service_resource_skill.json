@@ -1,0 +1,39 @@
+{
+	"actions": [],
+	"doctype": "DocType",
+	"editable_grid": 1,
+	"engine": "InnoDB",
+	"field_order": [
+		"skill",
+		"level",
+		"skill_level"
+	],
+	"fields": [
+		{
+			"fieldname": "skill",
+			"fieldtype": "Link",
+			"label": "Skill",
+			"options": "Service Skill",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "level",
+			"fieldtype": "Select",
+			"label": "Level",
+			"options": "Beginner\nIntermediate\nAdvanced\nExpert",
+			"default": "Intermediate",
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "skill_level",
+			"fieldtype": "Select",
+			"label": "Skill Level",
+			"options": "Beginner\nIntermediate\nAdvanced\nExpert"
+		}
+	],
+	"istable": 1,
+	"module": "Omnexa Services",
+	"name": "Service Resource Skill",
+	"permissions": []
+}

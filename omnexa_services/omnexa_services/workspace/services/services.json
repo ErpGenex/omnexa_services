@@ -1,0 +1,145 @@
+{
+ "charts": [],
+ "content": "[{\"id\": \"erpgenex-onboarding\", \"type\": \"onboarding\", \"data\": {\"onboarding_name\": \"ERPGENEX — Services\", \"col\": 12}}, {\"id\": \"srv-h1\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>Services</b></span>\", \"col\": 12}}, {\"id\": \"srv-c1\", \"type\": \"card\", \"data\": {\"card_name\": \"Setup\", \"col\": 4}}, {\"id\": \"srv-c2\", \"type\": \"card\", \"data\": {\"card_name\": \"Operations\", \"col\": 4}}, {\"id\": \"srv-c3\", \"type\": \"card\", \"data\": {\"card_name\": \"Reporting\", \"col\": 4}}]",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "tool",
+ "is_hidden": 0,
+ "label": "Services",
+ "links": [
+  {
+   "hidden": 0,
+   "label": "Setup",
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "icon": "star",
+   "label": "Service Skill",
+   "link_to": "Service Skill",
+   "link_type": "DocType",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "icon": "users",
+   "label": "Service Resource",
+   "link_to": "Service Resource",
+   "link_type": "DocType",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "icon": "trending-up",
+   "label": "Service Escalation Rule",
+   "link_to": "Service Escalation Rule",
+   "link_type": "DocType",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "icon": "wrench",
+   "label": "Service Definition",
+   "link_to": "Service Definition",
+   "link_type": "DocType",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "icon": "clock",
+   "label": "Service SLA Policy",
+   "link_to": "Service SLA Policy",
+   "link_type": "DocType",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "icon": "file-text",
+   "label": "Service Contract",
+   "link_to": "Service Contract",
+   "link_type": "DocType",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "label": "Operations",
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "icon": "help-circle",
+   "label": "Service Portal",
+   "link_to": "service-portal",
+   "link_type": "Page",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "icon": "alert-triangle",
+   "label": "Service Ticket",
+   "link_to": "Service Ticket",
+   "link_type": "DocType",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "icon": "timer",
+   "label": "Service Timesheet",
+   "link_to": "Service Timesheet",
+   "link_type": "DocType",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "icon": "file-plus",
+   "label": "Service Invoice",
+   "link_to": "Service Invoice",
+   "link_type": "DocType",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "label": "Reporting",
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "icon": "dollar-sign",
+   "is_query_report": 0,
+   "label": "Service Revenue Schedule",
+   "link_to": "Service Revenue Schedule",
+   "link_type": "DocType",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "icon": "activity",
+   "is_query_report": 1,
+   "label": "SLA Compliance",
+   "link_to": "SLA Compliance",
+   "link_type": "Report",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "icon": "bar-chart-2",
+   "is_query_report": 1,
+   "label": "Ticket Backlog",
+   "link_to": "Ticket Backlog",
+   "link_type": "Report",
+   "type": "Link"
+  }
+ ],
+ "module": "Omnexa Services",
+ "name": "Services",
+ "number_cards": [],
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 8.25,
+ "shortcuts": [],
+ "title": "Services"
+}

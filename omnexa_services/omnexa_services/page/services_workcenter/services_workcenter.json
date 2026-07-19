@@ -1,0 +1,16 @@
+{
+	"doctype": "Page",
+	"module": "Omnexa Services",
+	"name": "services-workcenter",
+	"page_name": "services-workcenter",
+	"standard": "Yes",
+	"title": "Services Workcenter",
+	"roles": [
+		{
+			"role": "System Manager"
+		},
+		{
+			"role": "Company Admin"
+		}
+	]
+}

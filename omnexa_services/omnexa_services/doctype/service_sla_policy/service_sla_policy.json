@@ -1,0 +1,117 @@
+{
+	"actions": [],
+	"allow_rename": 1,
+	"autoname": "format:SLA-{YYYY}-{#####}",
+	"doctype": "DocType",
+	"engine": "InnoDB",
+	"field_order": [
+		"tab_break_overview",
+		"policy_name",
+		"priority_level",
+		"response_time_hours",
+		"resolution_time_hours",
+		"penalty_percent",
+		"is_active",
+		"company",
+		"branch",
+		"policy_reference"
+	],
+	"fields": [
+		{
+			"fieldname": "tab_break_overview",
+			"fieldtype": "Tab Break",
+			"label": "Overview"
+		},
+		{
+			"fieldname": "policy_name",
+			"fieldtype": "Data",
+			"label": "Policy Name",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "priority_level",
+			"fieldtype": "Select",
+			"label": "Priority Level",
+			"options": "Low\nMedium\nHigh\nCritical",
+			"default": "Medium",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "response_time_hours",
+			"fieldtype": "Float",
+			"label": "Response Time (Hours)",
+			"default": "4",
+			"reqd": 1
+		},
+		{
+			"fieldname": "resolution_time_hours",
+			"fieldtype": "Float",
+			"label": "Resolution Time (Hours)",
+			"default": "24",
+			"reqd": 1
+		},
+		{
+			"fieldname": "penalty_percent",
+			"fieldtype": "Percent",
+			"label": "Penalty %",
+			"default": "0"
+		},
+		{
+			"fieldname": "is_active",
+			"fieldtype": "Check",
+			"label": "Is Active",
+			"default": "1"
+		},
+		{
+			"fieldname": "company",
+			"fieldtype": "Link",
+			"label": "Company",
+			"options": "Company",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "branch",
+			"fieldtype": "Link",
+			"label": "Branch",
+			"options": "Branch",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "policy_reference",
+			"fieldtype": "Data",
+			"label": "Policy Reference"
+		}
+	],
+	"module": "Omnexa Services",
+	"name": "Service SLA Policy",
+	"permissions": [
+		{
+			"role": "System Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 1,
+			"print": 1,
+			"email": 1,
+			"export": 1,
+			"report": 1,
+			"share": 1
+		},
+		{
+			"role": "Service Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 0,
+			"print": 1,
+			"email": 1,
+			"export": 1,
+			"report": 1
+		}
+	],
+	"track_changes": 1
+}

@@ -1,0 +1,105 @@
+{
+	"actions": [],
+	"allow_rename": 1,
+	"autoname": "format:TS-{YYYY}-{#####}",
+	"doctype": "DocType",
+	"engine": "InnoDB",
+	"field_order": [
+		"employee",
+		"company",
+		"branch",
+		"posting_date",
+		"entries",
+		"total_hours",
+		"timesheet_owner"
+	],
+	"fields": [
+		{
+			"fieldname": "employee",
+			"fieldtype": "Link",
+			"label": "Employee",
+			"options": "Employee",
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "company",
+			"fieldtype": "Link",
+			"label": "Company",
+			"options": "Company",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "branch",
+			"fieldtype": "Link",
+			"label": "Branch",
+			"options": "Branch",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "posting_date",
+			"fieldtype": "Date",
+			"label": "Posting Date",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "entries",
+			"fieldtype": "Table",
+			"label": "Entries",
+			"options": "Service Timesheet Entry"
+		},
+		{
+			"fieldname": "total_hours",
+			"fieldtype": "Float",
+			"label": "Total Hours",
+			"read_only": 1
+		},
+		{
+			"fieldname": "timesheet_owner",
+			"fieldtype": "Link",
+			"label": "Timesheet Owner",
+			"options": "User"
+		}
+	],
+	"module": "Omnexa Services",
+	"name": "Service Timesheet",
+	"permissions": [
+		{
+			"role": "System Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 1,
+			"print": 1,
+			"email": 1,
+			"export": 1,
+			"report": 1,
+			"share": 1
+		},
+		{
+			"role": "Service Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 0,
+			"print": 1,
+			"email": 1,
+			"export": 1,
+			"report": 1
+		},
+		{
+			"role": "Technician",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 0,
+			"print": 0,
+			"email": 0,
+			"export": 0,
+			"report": 0
+		}
+	],
+	"track_changes": 1
+}

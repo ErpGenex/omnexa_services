@@ -1,0 +1,51 @@
+{
+	"actions": [],
+	"doctype": "DocType",
+	"editable_grid": 1,
+	"engine": "InnoDB",
+	"field_order": [
+		"ticket",
+		"activity_date",
+		"hours",
+		"notes",
+		"line_reference"
+	],
+	"fields": [
+		{
+			"fieldname": "ticket",
+			"fieldtype": "Link",
+			"label": "Service Ticket",
+			"options": "Service Ticket",
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "activity_date",
+			"fieldtype": "Date",
+			"label": "Activity Date",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "hours",
+			"fieldtype": "Float",
+			"label": "Hours",
+			"default": "0",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "notes",
+			"fieldtype": "Small Text",
+			"label": "Notes"
+		},
+		{
+			"fieldname": "line_reference",
+			"fieldtype": "Data",
+			"label": "Line Reference"
+		}
+	],
+	"istable": 1,
+	"module": "Omnexa Services",
+	"name": "Service Timesheet Entry",
+	"permissions": []
+}

@@ -1,0 +1,134 @@
+{
+	"actions": [],
+	"allow_rename": 1,
+	"autoname": "format:ESC-{YYYY}-{#####}",
+	"doctype": "DocType",
+	"engine": "InnoDB",
+	"field_order": [
+		"tab_break_overview",
+		"rule_name",
+		"is_active",
+		"company",
+		"column_break_omnexa_1",
+		"branch",
+		"priority",
+		"tab_break_details",
+		"when_sla_breached",
+		"column_break_omnexa_2",
+		"assign_to",
+		"set_status",
+		"notes",
+		"escalation_role"
+	],
+	"fields": [
+		{
+			"fieldname": "tab_break_overview",
+			"fieldtype": "Tab Break",
+			"label": "Overview"
+		},
+		{
+			"fieldname": "tab_break_details",
+			"fieldtype": "Tab Break",
+			"label": "Details"
+		},
+		{
+			"fieldname": "rule_name",
+			"fieldtype": "Data",
+			"label": "Rule Name",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "is_active",
+			"fieldtype": "Check",
+			"label": "Is Active",
+			"default": "1",
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "company",
+			"fieldtype": "Link",
+			"label": "Company",
+			"options": "Company",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "branch",
+			"fieldtype": "Link",
+			"label": "Branch",
+			"options": "Branch",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "priority",
+			"fieldtype": "Select",
+			"label": "Priority",
+			"options": "\nLow\nMedium\nHigh\nCritical",
+			"default": "",
+			"description": "Leave empty to match any"
+		},
+		{
+			"fieldname": "when_sla_breached",
+			"fieldtype": "Check",
+			"label": "Apply Only When SLA Breached",
+			"default": "1"
+		},
+		{
+			"fieldname": "assign_to",
+			"fieldtype": "Link",
+			"label": "Assign To (User)",
+			"options": "User"
+		},
+		{
+			"fieldname": "set_status",
+			"fieldtype": "Select",
+			"label": "Set Status",
+			"options": "\nOpen\nAssigned\nIn Progress\nResolved\nClosed\nEscalated",
+			"default": "Escalated"
+		},
+		{
+			"fieldname": "notes",
+			"fieldtype": "Small Text",
+			"label": "Notes"
+		},
+		{
+			"fieldname": "escalation_role",
+			"fieldtype": "Data",
+			"label": "Escalation Role"
+		},
+		{
+			"fieldname": "column_break_omnexa_1",
+			"fieldtype": "Column Break"
+		},
+		{
+			"fieldname": "column_break_omnexa_2",
+			"fieldtype": "Column Break"
+		}
+	],
+	"module": "Omnexa Services",
+	"name": "Service Escalation Rule",
+	"permissions": [
+		{
+			"role": "System Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 1,
+			"export": 1,
+			"report": 1,
+			"share": 1
+		},
+		{
+			"role": "Service Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 0,
+			"export": 1,
+			"report": 1
+		}
+	],
+	"track_changes": 1
+}

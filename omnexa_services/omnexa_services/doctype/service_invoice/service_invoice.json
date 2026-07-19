@@ -1,0 +1,147 @@
+{
+	"actions": [],
+	"allow_rename": 1,
+	"autoname": "format:SINV-{YYYY}-{#####}",
+	"doctype": "DocType",
+	"engine": "InnoDB",
+	"field_order": [
+		"tab_break_overview",
+		"status",
+		"posting_date",
+		"customer_profile",
+		"column_break_omnexa_1",
+		"contract",
+		"service_definition",
+		"tab_break_details",
+		"amount",
+		"column_break_omnexa_2",
+		"sales_invoice",
+		"company",
+		"branch",
+		"invoice_reference"
+	],
+	"fields": [
+		{
+			"fieldname": "tab_break_overview",
+			"fieldtype": "Tab Break",
+			"label": "Overview"
+		},
+		{
+			"fieldname": "tab_break_details",
+			"fieldtype": "Tab Break",
+			"label": "Details"
+		},
+		{
+			"fieldname": "status",
+			"fieldtype": "Select",
+			"label": "Status",
+			"options": "Draft\nBilled\nCancelled",
+			"default": "Draft",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "posting_date",
+			"fieldtype": "Date",
+			"label": "Posting Date",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "customer_profile",
+			"fieldtype": "Link",
+			"label": "Customer Profile",
+			"options": "Customer Profile",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "contract",
+			"fieldtype": "Link",
+			"label": "Service Contract",
+			"options": "Service Contract",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "service_definition",
+			"fieldtype": "Link",
+			"label": "Service",
+			"options": "Service Definition",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "amount",
+			"fieldtype": "Currency",
+			"label": "Amount",
+			"default": "0",
+			"reqd": 1
+		},
+		{
+			"fieldname": "sales_invoice",
+			"fieldtype": "Link",
+			"label": "Sales Invoice",
+			"options": "Sales Invoice",
+			"read_only": 1
+		},
+		{
+			"fieldname": "company",
+			"fieldtype": "Link",
+			"label": "Company",
+			"options": "Company",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "branch",
+			"fieldtype": "Link",
+			"label": "Branch",
+			"options": "Branch",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "invoice_reference",
+			"fieldtype": "Data",
+			"label": "Invoice Reference"
+		},
+		{
+			"fieldname": "column_break_omnexa_1",
+			"fieldtype": "Column Break"
+		},
+		{
+			"fieldname": "column_break_omnexa_2",
+			"fieldtype": "Column Break"
+		}
+	],
+	"is_submittable": 0,
+	"module": "Omnexa Services",
+	"name": "Service Invoice",
+	"permissions": [
+		{
+			"role": "System Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 1,
+			"print": 1,
+			"email": 1,
+			"export": 1,
+			"report": 1,
+			"share": 1
+		},
+		{
+			"role": "Service Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 0,
+			"print": 1,
+			"email": 1,
+			"export": 1,
+			"report": 1
+		}
+	],
+	"track_changes": 1
+}

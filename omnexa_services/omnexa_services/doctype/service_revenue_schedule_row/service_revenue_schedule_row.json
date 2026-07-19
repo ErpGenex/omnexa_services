@@ -1,0 +1,55 @@
+{
+	"actions": [],
+	"doctype": "DocType",
+	"editable_grid": 1,
+	"engine": "InnoDB",
+	"field_order": [
+		"period_start",
+		"period_end",
+		"amount",
+		"status",
+		"line_reference"
+	],
+	"fields": [
+		{
+			"fieldname": "period_start",
+			"fieldtype": "Date",
+			"label": "Period Start",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "period_end",
+			"fieldtype": "Date",
+			"label": "Period End",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "amount",
+			"fieldtype": "Currency",
+			"label": "Amount",
+			"reqd": 1,
+			"default": "0",
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "status",
+			"fieldtype": "Select",
+			"label": "Status",
+			"options": "Planned\nRecognized\nCancelled",
+			"default": "Planned",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "line_reference",
+			"fieldtype": "Data",
+			"label": "Line Reference"
+		}
+	],
+	"istable": 1,
+	"module": "Omnexa Services",
+	"name": "Service Revenue Schedule Row",
+	"permissions": []
+}

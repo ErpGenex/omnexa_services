@@ -1,0 +1,157 @@
+Activities,Activities
+Activity Date,نشاط تاريخ
+Activity Date-Time,نشاط تاريخ - Time
+Activity Reference,نشاط Reference
+Activity Type,نشاط نوع
+Amount,مبلغ
+Apply Only When SLA Breached,Apply Only When SLA Breached
+Assign To (User),Assign إلى (مستخدم)
+Assigned To,Assigned إلى
+Assigned To is mandatory before resolving/closing a ticket.,Assigned إلى is mandatory before resolving closing a ticket.
+Assigned To is mandatory when ticket is assigned or in progress.,Assigned إلى is mandatory when ticket is assigned or in progress.
+At least one timesheet entry is required.,At least one timesheet قيد is required.
+Auto Assign,Auto Assign
+Auto Bill,Auto Bill
+Avg CSAT,متوسط CSAT
+Billing,فوترة
+Billing Cycle,فوترة Cycle
+Billing Item,فوترة صنف
+Billing Rate,فوترة معدل
+Branch,الفرع
+Branch belongs to another company.,فرع belongs إلى another شركة.
+Breached,Breached
+Category,الفئة
+Channel,Channel
+Classification Code,Classification كود
+Company,الشركة
+Company is required.,شركة is required.
+Compliance %,امتثال%
+Contract,العقد
+Contract Owner,عقد Owner
+Contract Start Date is mandatory.,عقد بداية تاريخ is mandatory.
+Created On,Created On
+Customer Profile,عميل ملف
+Customer Profile is mandatory.,عميل ملف is mandatory.
+Customer Profile is missing Linked Accounting Customer.,عميل ملف is missing Linked محاسبة عميل.
+Customer Satisfaction (CSAT),عميل Satisfaction (CSAT)
+Default Rate,افتراضي معدل
+Default Skill,افتراضي Skill
+Delivery Type,Delivery نوع
+Description,الوصف
+Details,التفاصيل
+Due Date,تاريخ الاستحقاق
+Employee,الموظف
+End Date,تاريخ الانتهاء
+End Date cannot be before Start Date.,نهاية تاريخ cannot be before بداية تاريخ.
+Entries,Entries
+Escalation Role,Escalation دور
+Filters,Filters
+First Response On,First Response On
+First Response On is mandatory before resolving/closing a ticket.,First Response On is mandatory before resolving closing a ticket.
+Hours,Hours
+Hours Spent,Hours Spent
+Invoice Reference,فاتورة Reference
+Is Active,Is نشط
+Last Billed On,Last Billed On
+Leave empty to match any,Leave empty إلى match any
+Level,Level
+Line Reference,Line Reference
+Load omnexa_core vertical portal desk,Load omnexa أساسي vertical بوابة desk
+Load omnexa_core vertical workcenter kit,Load omnexa أساسي vertical workcenter kit
+Max Open Tickets,أقصى مفتوح Tickets
+Milestone,Milestone
+Milestone Reference,Milestone Reference
+Milestones,Milestones
+Next Billing Date,Next فوترة تاريخ
+Notes,Notes
+Omnexa Services,Omnexa خدمات
+Operations,العمليات
+Overview,نظرة عامة
+Penalty %,Penalty%
+Period,Period
+Period (YYYY-MM),Period (YYYY - MM)
+Period End,Period نهاية
+Period Start,Period بداية
+Policy Name,سياسة اسم
+Policy Reference,سياسة Reference
+Posting Date,Posting تاريخ
+Pricing Model,Pricing Model
+Priority,Priority
+Priority Level,Priority Level
+Rated tickets,Rated tickets
+Recognition Method (IFRS 15),Recognition Method (IFRS 15)
+Reopened Count,Reopened عدد
+Reporting,Reporting
+Required Skill,Required Skill
+Resolution Time (Hours),Resolution Time (Hours)
+Resolved On,Resolved On
+Resource Name,Resource اسم
+Resource Owner,Resource Owner
+Resource Type,Resource نوع
+Response Time (Hours),Response Time (Hours)
+Revenue,الإيرادات
+Revenue Recognition (IFRS 15),إيرادات Recognition (IFRS 15)
+Revenue Schedule Rows,إيرادات Schedule Rows
+Rule Name,Rule اسم
+Sales Invoice,فاتورة مبيعات
+Schedule End,Schedule نهاية
+Schedule Reference,Schedule Reference
+Schedule Start,Schedule بداية
+Service,خدمة
+Service Contract,خدمة عقد
+Service Contract Milestone,خدمة عقد Milestone
+Service Definition,خدمة Definition
+Service Escalation Rule,خدمة Escalation Rule
+Service Invoice,خدمة فاتورة
+Service Name,خدمة اسم
+Service Portal,خدمة بوابة
+Service Resource,خدمة Resource
+Service Resource Skill,خدمة Resource Skill
+Service Revenue Schedule,خدمة إيرادات Schedule
+Service Revenue Schedule Row,خدمة إيرادات Schedule Row
+Service Skill,خدمة Skill
+Service SLA Policy,خدمة SLA سياسة
+Service Ticket,خدمة Ticket
+Service Ticket Activity,خدمة Ticket نشاط
+Service Timesheet,خدمة Timesheet
+Service Timesheet Entry,خدمة Timesheet قيد
+Service Type,خدمة نوع
+Services,خدمات
+Services Workcenter,خدمات Workcenter
+services-analytics-dashboard,خدمات - تحليلات - لوحة معلومات
+services-customer-portal,خدمات - عميل - بوابة
+services-executive-dashboard,خدمات - تنفيذي - لوحة معلومات
+services-finance-desk,خدمات - مالية - desk
+services-operations-desk,خدمات - عمليات - desk
+Set Billing Item on Service Definition before billing.,Set فوترة صنف on خدمة Definition before فوترة.
+Set Status,Set حالة
+Setup,تهيئة
+Skill,Skill
+Skill Code,Skill كود
+Skill Level,Skill Level
+Skill Name,Skill اسم
+Skills,Skills
+SLA Breach Risk %,SLA Breach مخاطر%
+SLA Breached,SLA Breached
+SLA Compliance,SLA امتثال
+SLA Policy,SLA سياسة
+SLA Policy is mandatory.,SLA سياسة is mandatory.
+SLA Resolution Due,SLA Resolution استحقاق
+SLA Response Due,SLA Response استحقاق
+Start Date,بداية تاريخ
+Status,الحالة
+Subject,Subject
+svc-executive-dashboard,svc - تنفيذي - لوحة معلومات
+Ticket Backlog,Ticket Backlog
+Ticket Owner,Ticket Owner
+Tickets,Tickets
+Timesheet Owner,Timesheet Owner
+Timesheets,Timesheets
+Total,الإجمالي
+Total Amount,إجمالي مبلغ
+Total Hours,إجمالي Hours
+Total hours,إجمالي hours
+Total hours must be greater than zero.,إجمالي hours must be greater than zero.
+User,المستخدم
+Vendor,Vendor
+Within SLA,Within SLA

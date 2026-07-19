@@ -1,0 +1,144 @@
+{
+	"actions": [],
+	"allow_rename": 1,
+	"autoname": "format:RES-{YYYY}-{#####}",
+	"doctype": "DocType",
+	"engine": "InnoDB",
+	"field_order": [
+		"tab_break_overview",
+		"resource_name",
+		"resource_type",
+		"user",
+		"column_break_omnexa_1",
+		"employee",
+		"vendor",
+		"tab_break_details",
+		"company",
+		"column_break_omnexa_2",
+		"branch",
+		"is_active",
+		"max_open_tickets",
+		"skills",
+		"resource_owner"
+	],
+	"fields": [
+		{
+			"fieldname": "tab_break_overview",
+			"fieldtype": "Tab Break",
+			"label": "Overview"
+		},
+		{
+			"fieldname": "tab_break_details",
+			"fieldtype": "Tab Break",
+			"label": "Details"
+		},
+		{
+			"fieldname": "resource_name",
+			"fieldtype": "Data",
+			"label": "Resource Name",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "resource_type",
+			"fieldtype": "Select",
+			"label": "Resource Type",
+			"options": "Employee\nContractor\nExternal Vendor",
+			"default": "Employee",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "user",
+			"fieldtype": "Link",
+			"label": "User",
+			"options": "User",
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "employee",
+			"fieldtype": "Link",
+			"label": "Employee",
+			"options": "Employee"
+		},
+		{
+			"fieldname": "vendor",
+			"fieldtype": "Link",
+			"label": "Vendor",
+			"options": "Supplier"
+		},
+		{
+			"fieldname": "company",
+			"fieldtype": "Link",
+			"label": "Company",
+			"options": "Company",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "branch",
+			"fieldtype": "Link",
+			"label": "Branch",
+			"options": "Branch",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "is_active",
+			"fieldtype": "Check",
+			"label": "Is Active",
+			"default": "1",
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "max_open_tickets",
+			"fieldtype": "Int",
+			"label": "Max Open Tickets",
+			"default": "50"
+		},
+		{
+			"fieldname": "skills",
+			"fieldtype": "Table",
+			"label": "Skills",
+			"options": "Service Resource Skill"
+		},
+		{
+			"fieldname": "resource_owner",
+			"fieldtype": "Link",
+			"label": "Resource Owner",
+			"options": "User"
+		},
+		{
+			"fieldname": "column_break_omnexa_1",
+			"fieldtype": "Column Break"
+		},
+		{
+			"fieldname": "column_break_omnexa_2",
+			"fieldtype": "Column Break"
+		}
+	],
+	"module": "Omnexa Services",
+	"name": "Service Resource",
+	"permissions": [
+		{
+			"role": "System Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 1,
+			"export": 1,
+			"report": 1,
+			"share": 1
+		},
+		{
+			"role": "Service Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 0,
+			"export": 1,
+			"report": 1
+		}
+	],
+	"track_changes": 1
+}

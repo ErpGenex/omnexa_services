@@ -1,0 +1,162 @@
+{
+	"actions": [],
+	"allow_rename": 1,
+	"autoname": "format:SRV-{YYYY}-{#####}",
+	"doctype": "DocType",
+	"engine": "InnoDB",
+	"field_order": [
+		"tab_break_overview",
+		"service_name",
+		"category",
+		"service_type",
+		"delivery_type",
+		"column_break_omnexa_1",
+		"pricing_model",
+		"revenue_recognition",
+		"tab_break_details",
+		"billing_item",
+		"default_skill",
+		"column_break_omnexa_2",
+		"default_rate",
+		"company",
+		"branch",
+		"is_active",
+		"classification_code"
+	],
+	"fields": [
+		{
+			"fieldname": "tab_break_overview",
+			"fieldtype": "Tab Break",
+			"label": "Overview"
+		},
+		{
+			"fieldname": "tab_break_details",
+			"fieldtype": "Tab Break",
+			"label": "Details"
+		},
+		{
+			"fieldname": "service_name",
+			"fieldtype": "Data",
+			"label": "Service Name",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "category",
+			"fieldtype": "Data",
+			"label": "Category",
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "service_type",
+			"fieldtype": "Select",
+			"label": "Service Type",
+			"options": "One-time Service\nRecurring Service (Subscription)\nProject-based Service\nTicket-based Service",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "delivery_type",
+			"fieldtype": "Select",
+			"label": "Delivery Type",
+			"options": "Onsite\nRemote\nHybrid",
+			"reqd": 1
+		},
+		{
+			"fieldname": "pricing_model",
+			"fieldtype": "Select",
+			"label": "Pricing Model",
+			"options": "Fixed Price\nTime & Material\nTiered Pricing\nSubscription Pricing\nSLA-based Pricing",
+			"reqd": 1
+		},
+		{
+			"fieldname": "revenue_recognition",
+			"fieldtype": "Select",
+			"label": "Revenue Recognition (IFRS 15)",
+			"options": "Over Time\nPoint in Time",
+			"default": "Over Time",
+			"reqd": 1
+		},
+		{
+			"fieldname": "billing_item",
+			"fieldtype": "Link",
+			"label": "Billing Item",
+			"options": "Item"
+		},
+		{
+			"fieldname": "default_skill",
+			"fieldtype": "Link",
+			"label": "Default Skill",
+			"options": "Service Skill"
+		},
+		{
+			"fieldname": "default_rate",
+			"fieldtype": "Currency",
+			"label": "Default Rate",
+			"default": "0"
+		},
+		{
+			"fieldname": "company",
+			"fieldtype": "Link",
+			"label": "Company",
+			"options": "Company",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "branch",
+			"fieldtype": "Link",
+			"label": "Branch",
+			"options": "Branch",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "is_active",
+			"fieldtype": "Check",
+			"label": "Is Active",
+			"default": "1"
+		},
+		{
+			"fieldname": "classification_code",
+			"fieldtype": "Data",
+			"label": "Classification Code"
+		},
+		{
+			"fieldname": "column_break_omnexa_1",
+			"fieldtype": "Column Break"
+		},
+		{
+			"fieldname": "column_break_omnexa_2",
+			"fieldtype": "Column Break"
+		}
+	],
+	"module": "Omnexa Services",
+	"name": "Service Definition",
+	"permissions": [
+		{
+			"role": "System Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 1,
+			"print": 1,
+			"email": 1,
+			"export": 1,
+			"report": 1,
+			"share": 1
+		},
+		{
+			"role": "Service Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 0,
+			"print": 1,
+			"email": 1,
+			"export": 1,
+			"report": 1
+		}
+	],
+	"track_changes": 1
+}

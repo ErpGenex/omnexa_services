@@ -1,0 +1,272 @@
+{
+	"actions": [],
+	"allow_rename": 1,
+	"autoname": "format:TKT-{YYYY}-{#####}",
+	"doctype": "DocType",
+	"engine": "InnoDB",
+	"field_order": [
+		"tab_break_overview",
+		"subject",
+		"service_contract",
+		"service_definition",
+		"customer_profile",
+		"company",
+		"branch",
+		"priority",
+		"column_break_omnexa_1",
+		"required_skill",
+		"auto_assign",
+		"assigned_to",
+		"channel",
+		"status",
+		"tab_break_details",
+		"created_on",
+		"first_response_on",
+		"resolved_on",
+		"column_break_omnexa_2",
+		"sla_policy",
+		"sla_response_due",
+		"sla_resolution_due",
+		"is_sla_breached",
+		"sla_breach_risk",
+		"reopened_count",
+		"csat_rating",
+		"description",
+		"activities",
+		"ticket_owner"
+	],
+	"fields": [
+		{
+			"fieldname": "tab_break_overview",
+			"fieldtype": "Tab Break",
+			"label": "Overview"
+		},
+		{
+			"fieldname": "tab_break_details",
+			"fieldtype": "Tab Break",
+			"label": "Details"
+		},
+		{
+			"fieldname": "subject",
+			"fieldtype": "Data",
+			"label": "Subject",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "service_contract",
+			"fieldtype": "Link",
+			"label": "Service Contract",
+			"options": "Service Contract"
+		},
+		{
+			"fieldname": "service_definition",
+			"fieldtype": "Link",
+			"label": "Service",
+			"options": "Service Definition"
+		},
+		{
+			"fieldname": "customer_profile",
+			"fieldtype": "Link",
+			"label": "Customer Profile",
+			"options": "Customer Profile",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "company",
+			"fieldtype": "Link",
+			"label": "Company",
+			"options": "Company",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "branch",
+			"fieldtype": "Link",
+			"label": "Branch",
+			"options": "Branch",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "priority",
+			"fieldtype": "Select",
+			"label": "Priority",
+			"options": "Low\nMedium\nHigh\nCritical",
+			"default": "Medium",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "required_skill",
+			"fieldtype": "Link",
+			"label": "Required Skill",
+			"options": "Service Skill"
+		},
+		{
+			"fieldname": "auto_assign",
+			"fieldtype": "Check",
+			"label": "Auto Assign",
+			"default": "1"
+		},
+		{
+			"fieldname": "assigned_to",
+			"fieldtype": "Link",
+			"label": "Assigned To",
+			"options": "User",
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "channel",
+			"fieldtype": "Select",
+			"label": "Channel",
+			"options": "Email\nPortal\nAPI\nManual",
+			"default": "Manual"
+		},
+		{
+			"fieldname": "status",
+			"fieldtype": "Select",
+			"label": "Status",
+			"options": "Open\nAssigned\nIn Progress\nResolved\nClosed\nEscalated",
+			"default": "Open",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "created_on",
+			"fieldtype": "Datetime",
+			"label": "Created On",
+			"read_only": 1
+		},
+		{
+			"fieldname": "first_response_on",
+			"fieldtype": "Datetime",
+			"label": "First Response On"
+		},
+		{
+			"fieldname": "resolved_on",
+			"fieldtype": "Datetime",
+			"label": "Resolved On"
+		},
+		{
+			"fieldname": "sla_policy",
+			"fieldtype": "Link",
+			"label": "SLA Policy",
+			"options": "Service SLA Policy"
+		},
+		{
+			"fieldname": "sla_response_due",
+			"fieldtype": "Datetime",
+			"label": "SLA Response Due",
+			"read_only": 1
+		},
+		{
+			"fieldname": "sla_resolution_due",
+			"fieldtype": "Datetime",
+			"label": "SLA Resolution Due",
+			"read_only": 1
+		},
+		{
+			"fieldname": "is_sla_breached",
+			"fieldtype": "Check",
+			"label": "SLA Breached",
+			"default": "0",
+			"read_only": 1
+		},
+		{
+			"fieldname": "sla_breach_risk",
+			"fieldtype": "Percent",
+			"label": "SLA Breach Risk %",
+			"default": "0",
+			"read_only": 1
+		},
+		{
+			"fieldname": "reopened_count",
+			"fieldtype": "Int",
+			"label": "Reopened Count",
+			"default": "0",
+			"read_only": 1
+		},
+		{
+			"fieldname": "csat_rating",
+			"fieldtype": "Rating",
+			"label": "Customer Satisfaction (CSAT)"
+		},
+		{
+			"fieldname": "description",
+			"fieldtype": "Small Text",
+			"label": "Description"
+		},
+		{
+			"fieldname": "activities",
+			"fieldtype": "Table",
+			"label": "Activities",
+			"options": "Service Ticket Activity"
+		},
+		{
+			"fieldname": "ticket_owner",
+			"fieldtype": "Link",
+			"label": "Ticket Owner",
+			"options": "User"
+		},
+		{
+			"fieldname": "column_break_omnexa_1",
+			"fieldtype": "Column Break"
+		},
+		{
+			"fieldname": "column_break_omnexa_2",
+			"fieldtype": "Column Break"
+		}
+	],
+	"module": "Omnexa Services",
+	"name": "Service Ticket",
+	"permissions": [
+		{
+			"role": "System Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 1,
+			"print": 1,
+			"email": 1,
+			"export": 1,
+			"report": 1,
+			"share": 1
+		},
+		{
+			"role": "Service Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 0,
+			"print": 1,
+			"email": 1,
+			"export": 1,
+			"report": 1
+		},
+		{
+			"role": "Support Agent",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 0,
+			"print": 1,
+			"email": 1,
+			"export": 0,
+			"report": 1
+		},
+		{
+			"role": "Technician",
+			"read": 1,
+			"write": 1,
+			"create": 0,
+			"delete": 0,
+			"print": 1,
+			"email": 0,
+			"export": 0,
+			"report": 0
+		}
+	],
+	"track_changes": 1
+}
