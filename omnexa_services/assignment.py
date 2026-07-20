@@ -13,7 +13,8 @@ def pick_assignee(*, company: str, branch: str, required_skill: str | None):
 
 	skill_join = ""
 	skill_where = ""
-	args = {"company": company, "branch": branch}
+	args = {"company": company, "branch": branch
+	}
 	if required_skill:
 		skill_join = "JOIN `tabService Resource Skill` srs ON srs.parent = sr.name"
 		skill_where = "AND srs.skill = %(skill)s"

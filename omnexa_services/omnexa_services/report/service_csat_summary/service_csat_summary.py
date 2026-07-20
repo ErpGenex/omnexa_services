@@ -52,7 +52,10 @@ def execute(filters=None):
 
 def _columns():
 	return [
-		{"label": _("Branch"), "fieldname": "branch", "fieldtype": "Link", "options": "Branch", "width": 140},
-		{"label": _("Rated tickets"), "fieldname": "rated_tickets", "fieldtype": "Int", "width": 110},
-		{"label": _("Avg CSAT"), "fieldname": "avg_csat", "fieldtype": "Float", "width": 100},
+		{"label": _("Branch"), "fieldname": "branch", "fieldtype": "Link", "options": "Branch", "width": 140
+	},
+		{"label": _("Rated tickets"), "fieldname": "rated_tickets", "fieldtype": "Int", "width": 110
+	},
+		{"label": _("Avg CSAT"), "fieldname": "avg_csat", "fieldtype": "Float", "width": 100
+	},
 	]

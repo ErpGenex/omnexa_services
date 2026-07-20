@@ -53,8 +53,12 @@ def execute(filters=None):
 
 def _columns():
 	return [
-		{"label": _("Branch"), "fieldname": "branch", "fieldtype": "Link", "options": "Branch", "width": 140},
-		{"label": _("Period (YYYY-MM)"), "fieldname": "period", "fieldtype": "Data", "width": 110},
-		{"label": _("Timesheets"), "fieldname": "timesheet_count", "fieldtype": "Int", "width": 100},
-		{"label": _("Total hours"), "fieldname": "total_hours", "fieldtype": "Float", "width": 120},
+		{"label": _("Branch"), "fieldname": "branch", "fieldtype": "Link", "options": "Branch", "width": 140
+	},
+		{"label": _("Period (YYYY-MM)"), "fieldname": "period", "fieldtype": "Data", "width": 110
+	},
+		{"label": _("Timesheets"), "fieldname": "timesheet_count", "fieldtype": "Int", "width": 100
+	},
+		{"label": _("Total hours"), "fieldname": "total_hours", "fieldtype": "Float", "width": 120
+	},
 	]

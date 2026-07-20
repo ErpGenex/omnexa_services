@@ -35,15 +35,16 @@ def ensure_revenue_schedule_for_contract(contract_name: str):
 				"period_start": end,
 				"period_end": end,
 				"amount": total,
-				"status": "Planned",
-			},
+				"status": "Planned"
+	},
 		)
 	else:
 		# Over Time: monthly straight-line across contract duration (or at least one month)
 		rows = _monthly_periods(start, end)
 		per = flt(total / max(1, len(rows)), 2)
 		for ps, pe in rows:
-			sch.append("rows", {"period_start": ps, "period_end": pe, "amount": per, "status": "Planned"})
+			sch.append("rows", {"period_start": ps, "period_end": pe, "amount": per, "status": "Planned"
+	})
 
 	sch.insert(ignore_permissions=True)
 	return sch.name

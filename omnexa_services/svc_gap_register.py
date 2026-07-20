@@ -12,54 +12,102 @@ GAPS_TOTAL = 48
 APP = "omnexa_services"
 
 GAP_DEFINITIONS: list[dict] = [
-	{"id": "SV-001", "domain": "integration", "title": "Global benchmark module", "wave": 1, "detect": "module:svc_global_benchmark"},
-	{"id": "SV-002", "domain": "integration", "title": "Gap register", "wave": 1, "detect": "module:svc_gap_register"},
-	{"id": "SV-003", "domain": "integration", "title": "Workspace sync module", "wave": 1, "detect": "module:workspace.svc_workspace"},
-	{"id": "SV-004", "domain": "integration", "title": "Assessment export", "wave": 1, "detect": "module:svc_assessment"},
-	{"id": "SV-005", "domain": "analytics", "title": "Sector analytics API", "wave": 2, "detect": "api:omnexa_services.svc_global_extensions.compute_sector_analytics"},
-	{"id": "SV-006", "domain": "analytics", "title": "Demand forecast API", "wave": 2, "detect": "api:omnexa_services.svc_global_extensions.forecast_demand_pipeline"},
-	{"id": "SV-007", "domain": "analytics", "title": "Executive dashboard API", "wave": 2, "detect": "api:omnexa_services.vertical_dashboard_api.get_vertical_dashboard"},
-	{"id": "SV-008", "domain": "digital", "title": "Executive dashboard page", "wave": 2, "detect": "page:svc-executive-dashboard"},
-	{"id": "SV-009", "domain": "digital", "title": "Digital channel page", "wave": 2, "detect": "page:service-portal"},
-	{"id": "SV-010", "domain": "bi", "title": "Sector KPI bridge", "wave": 1, "detect": "api:omnexa_services.api.preview_sector_kpi"},
-	{"id": "SV-011", "domain": "operations", "title": "Scheduler module", "wave": 1, "detect": "module:tasks"},
-	{"id": "SV-012", "domain": "security", "title": "RBAC permissions", "wave": 1, "detect": "file:permissions.py"},
-	{"id": "SV-013", "domain": "compliance", "title": "SAP parity test", "wave": 1, "detect": "file:tests/test_sap_parity_sector.py"},
-	{"id": "SV-014", "domain": "compliance", "title": "Parity extension 14", "wave": 1, "detect": "module:svc_global_benchmark"},
-	{"id": "SV-015", "domain": "compliance", "title": "Parity extension 15", "wave": 1, "detect": "module:svc_global_benchmark"},
-	{"id": "SV-016", "domain": "compliance", "title": "Parity extension 16", "wave": 1, "detect": "module:svc_global_benchmark"},
-	{"id": "SV-017", "domain": "compliance", "title": "Parity extension 17", "wave": 1, "detect": "module:svc_global_benchmark"},
-	{"id": "SV-018", "domain": "compliance", "title": "Parity extension 18", "wave": 1, "detect": "module:svc_global_benchmark"},
-	{"id": "SV-019", "domain": "compliance", "title": "Parity extension 19", "wave": 1, "detect": "module:svc_global_benchmark"},
-	{"id": "SV-020", "domain": "compliance", "title": "Parity extension 20", "wave": 1, "detect": "module:svc_global_benchmark"},
-	{"id": "SV-021", "domain": "compliance", "title": "Parity extension 21", "wave": 1, "detect": "module:svc_global_benchmark"},
-	{"id": "SV-022", "domain": "compliance", "title": "Parity extension 22", "wave": 1, "detect": "module:svc_global_benchmark"},
-	{"id": "SV-023", "domain": "compliance", "title": "Parity extension 23", "wave": 1, "detect": "module:svc_global_benchmark"},
-	{"id": "SV-024", "domain": "compliance", "title": "Parity extension 24", "wave": 1, "detect": "module:svc_global_benchmark"},
-	{"id": "SV-025", "domain": "compliance", "title": "Parity extension 25", "wave": 1, "detect": "module:svc_global_benchmark"},
-	{"id": "SV-026", "domain": "compliance", "title": "Parity extension 26", "wave": 1, "detect": "module:svc_global_benchmark"},
-	{"id": "SV-027", "domain": "compliance", "title": "Parity extension 27", "wave": 1, "detect": "module:svc_global_benchmark"},
-	{"id": "SV-028", "domain": "compliance", "title": "Parity extension 28", "wave": 1, "detect": "module:svc_global_benchmark"},
-	{"id": "SV-029", "domain": "compliance", "title": "Parity extension 29", "wave": 1, "detect": "module:svc_global_benchmark"},
-	{"id": "SV-030", "domain": "compliance", "title": "Parity extension 30", "wave": 1, "detect": "module:svc_global_benchmark"},
-	{"id": "SV-031", "domain": "compliance", "title": "Parity extension 31", "wave": 1, "detect": "module:svc_global_benchmark"},
-	{"id": "SV-032", "domain": "compliance", "title": "Parity extension 32", "wave": 1, "detect": "module:svc_global_benchmark"},
-	{"id": "SV-033", "domain": "compliance", "title": "Parity extension 33", "wave": 1, "detect": "module:svc_global_benchmark"},
-	{"id": "SV-034", "domain": "compliance", "title": "Parity extension 34", "wave": 1, "detect": "module:svc_global_benchmark"},
-	{"id": "SV-035", "domain": "compliance", "title": "Parity extension 35", "wave": 1, "detect": "module:svc_global_benchmark"},
-	{"id": "SV-036", "domain": "compliance", "title": "Parity extension 36", "wave": 1, "detect": "module:svc_global_benchmark"},
-	{"id": "SV-037", "domain": "compliance", "title": "Parity extension 37", "wave": 1, "detect": "module:svc_global_benchmark"},
-	{"id": "SV-038", "domain": "compliance", "title": "Parity extension 38", "wave": 1, "detect": "module:svc_global_benchmark"},
-	{"id": "SV-039", "domain": "compliance", "title": "Parity extension 39", "wave": 1, "detect": "module:svc_global_benchmark"},
-	{"id": "SV-040", "domain": "compliance", "title": "Parity extension 40", "wave": 1, "detect": "module:svc_global_benchmark"},
-	{"id": "SV-041", "domain": "compliance", "title": "Parity extension 41", "wave": 1, "detect": "module:svc_global_benchmark"},
-	{"id": "SV-042", "domain": "compliance", "title": "Parity extension 42", "wave": 1, "detect": "module:svc_global_benchmark"},
-	{"id": "SV-043", "domain": "compliance", "title": "Parity extension 43", "wave": 1, "detect": "module:svc_global_benchmark"},
-	{"id": "SV-044", "domain": "compliance", "title": "Parity extension 44", "wave": 1, "detect": "module:svc_global_benchmark"},
-	{"id": "SV-045", "domain": "compliance", "title": "Parity extension 45", "wave": 1, "detect": "module:svc_global_benchmark"},
-	{"id": "SV-046", "domain": "compliance", "title": "Parity extension 46", "wave": 1, "detect": "module:svc_global_benchmark"},
-	{"id": "SV-047", "domain": "compliance", "title": "Parity extension 47", "wave": 1, "detect": "module:svc_global_benchmark"},
-	{"id": "SV-048", "domain": "compliance", "title": "Parity extension 48", "wave": 1, "detect": "module:svc_global_benchmark"},
+	{"id": "SV-001", "domain": "integration", "title": "Global benchmark module", "wave": 1, "detect": "module:svc_global_benchmark"
+	},
+	{"id": "SV-002", "domain": "integration", "title": "Gap register", "wave": 1, "detect": "module:svc_gap_register"
+	},
+	{"id": "SV-003", "domain": "integration", "title": "Workspace sync module", "wave": 1, "detect": "module:workspace.svc_workspace"
+	},
+	{"id": "SV-004", "domain": "integration", "title": "Assessment export", "wave": 1, "detect": "module:svc_assessment"
+	},
+	{"id": "SV-005", "domain": "analytics", "title": "Sector analytics API", "wave": 2, "detect": "api:omnexa_services.svc_global_extensions.compute_sector_analytics"
+	},
+	{"id": "SV-006", "domain": "analytics", "title": "Demand forecast API", "wave": 2, "detect": "api:omnexa_services.svc_global_extensions.forecast_demand_pipeline"
+	},
+	{"id": "SV-007", "domain": "analytics", "title": "Executive dashboard API", "wave": 2, "detect": "api:omnexa_services.vertical_dashboard_api.get_vertical_dashboard"
+	},
+	{"id": "SV-008", "domain": "digital", "title": "Executive dashboard page", "wave": 2, "detect": "page:svc-executive-dashboard"
+	},
+	{"id": "SV-009", "domain": "digital", "title": "Digital channel page", "wave": 2, "detect": "page:service-portal"
+	},
+	{"id": "SV-010", "domain": "bi", "title": "Sector KPI bridge", "wave": 1, "detect": "api:omnexa_services.api.preview_sector_kpi"
+	},
+	{"id": "SV-011", "domain": "operations", "title": "Scheduler module", "wave": 1, "detect": "module:tasks"
+	},
+	{"id": "SV-012", "domain": "security", "title": "RBAC permissions", "wave": 1, "detect": "file:permissions.py"
+	},
+	{"id": "SV-013", "domain": "compliance", "title": "SAP parity test", "wave": 1, "detect": "file:tests/test_sap_parity_sector.py"
+	},
+	{"id": "SV-014", "domain": "compliance", "title": "Parity extension 14", "wave": 1, "detect": "module:svc_global_benchmark"
+	},
+	{"id": "SV-015", "domain": "compliance", "title": "Parity extension 15", "wave": 1, "detect": "module:svc_global_benchmark"
+	},
+	{"id": "SV-016", "domain": "compliance", "title": "Parity extension 16", "wave": 1, "detect": "module:svc_global_benchmark"
+	},
+	{"id": "SV-017", "domain": "compliance", "title": "Parity extension 17", "wave": 1, "detect": "module:svc_global_benchmark"
+	},
+	{"id": "SV-018", "domain": "compliance", "title": "Parity extension 18", "wave": 1, "detect": "module:svc_global_benchmark"
+	},
+	{"id": "SV-019", "domain": "compliance", "title": "Parity extension 19", "wave": 1, "detect": "module:svc_global_benchmark"
+	},
+	{"id": "SV-020", "domain": "compliance", "title": "Parity extension 20", "wave": 1, "detect": "module:svc_global_benchmark"
+	},
+	{"id": "SV-021", "domain": "compliance", "title": "Parity extension 21", "wave": 1, "detect": "module:svc_global_benchmark"
+	},
+	{"id": "SV-022", "domain": "compliance", "title": "Parity extension 22", "wave": 1, "detect": "module:svc_global_benchmark"
+	},
+	{"id": "SV-023", "domain": "compliance", "title": "Parity extension 23", "wave": 1, "detect": "module:svc_global_benchmark"
+	},
+	{"id": "SV-024", "domain": "compliance", "title": "Parity extension 24", "wave": 1, "detect": "module:svc_global_benchmark"
+	},
+	{"id": "SV-025", "domain": "compliance", "title": "Parity extension 25", "wave": 1, "detect": "module:svc_global_benchmark"
+	},
+	{"id": "SV-026", "domain": "compliance", "title": "Parity extension 26", "wave": 1, "detect": "module:svc_global_benchmark"
+	},
+	{"id": "SV-027", "domain": "compliance", "title": "Parity extension 27", "wave": 1, "detect": "module:svc_global_benchmark"
+	},
+	{"id": "SV-028", "domain": "compliance", "title": "Parity extension 28", "wave": 1, "detect": "module:svc_global_benchmark"
+	},
+	{"id": "SV-029", "domain": "compliance", "title": "Parity extension 29", "wave": 1, "detect": "module:svc_global_benchmark"
+	},
+	{"id": "SV-030", "domain": "compliance", "title": "Parity extension 30", "wave": 1, "detect": "module:svc_global_benchmark"
+	},
+	{"id": "SV-031", "domain": "compliance", "title": "Parity extension 31", "wave": 1, "detect": "module:svc_global_benchmark"
+	},
+	{"id": "SV-032", "domain": "compliance", "title": "Parity extension 32", "wave": 1, "detect": "module:svc_global_benchmark"
+	},
+	{"id": "SV-033", "domain": "compliance", "title": "Parity extension 33", "wave": 1, "detect": "module:svc_global_benchmark"
+	},
+	{"id": "SV-034", "domain": "compliance", "title": "Parity extension 34", "wave": 1, "detect": "module:svc_global_benchmark"
+	},
+	{"id": "SV-035", "domain": "compliance", "title": "Parity extension 35", "wave": 1, "detect": "module:svc_global_benchmark"
+	},
+	{"id": "SV-036", "domain": "compliance", "title": "Parity extension 36", "wave": 1, "detect": "module:svc_global_benchmark"
+	},
+	{"id": "SV-037", "domain": "compliance", "title": "Parity extension 37", "wave": 1, "detect": "module:svc_global_benchmark"
+	},
+	{"id": "SV-038", "domain": "compliance", "title": "Parity extension 38", "wave": 1, "detect": "module:svc_global_benchmark"
+	},
+	{"id": "SV-039", "domain": "compliance", "title": "Parity extension 39", "wave": 1, "detect": "module:svc_global_benchmark"
+	},
+	{"id": "SV-040", "domain": "compliance", "title": "Parity extension 40", "wave": 1, "detect": "module:svc_global_benchmark"
+	},
+	{"id": "SV-041", "domain": "compliance", "title": "Parity extension 41", "wave": 1, "detect": "module:svc_global_benchmark"
+	},
+	{"id": "SV-042", "domain": "compliance", "title": "Parity extension 42", "wave": 1, "detect": "module:svc_global_benchmark"
+	},
+	{"id": "SV-043", "domain": "compliance", "title": "Parity extension 43", "wave": 1, "detect": "module:svc_global_benchmark"
+	},
+	{"id": "SV-044", "domain": "compliance", "title": "Parity extension 44", "wave": 1, "detect": "module:svc_global_benchmark"
+	},
+	{"id": "SV-045", "domain": "compliance", "title": "Parity extension 45", "wave": 1, "detect": "module:svc_global_benchmark"
+	},
+	{"id": "SV-046", "domain": "compliance", "title": "Parity extension 46", "wave": 1, "detect": "module:svc_global_benchmark"
+	},
+	{"id": "SV-047", "domain": "compliance", "title": "Parity extension 47", "wave": 1, "detect": "module:svc_global_benchmark"
+	},
+	{"id": "SV-048", "domain": "compliance", "title": "Parity extension 48", "wave": 1, "detect": "module:svc_global_benchmark"
+	},
 ]
 
 def _detect_gap(gap: dict) -> bool:
@@ -91,9 +139,10 @@ def get_gap_status() -> dict:
 		ok = _detect_gap(gap)
 		if ok:
 			closed += 1
-		rows.append({**gap, "status": "closed" if ok else "open"})
+		rows.append({**gap, "status": "closed" if ok else "open"
+	})
 	return {
 		"version": "2026.06.13", "target_score": GLOBAL_LEADER_TARGET,
 		"gaps_total": GAPS_TOTAL, "gaps_closed": closed, "gaps_open": GAPS_TOTAL - closed,
-		"global_leader_gate": closed >= GAPS_TOTAL, "gaps": rows,
+		"global_leader_gate": closed >= GAPS_TOTAL, "gaps": rows
 	}

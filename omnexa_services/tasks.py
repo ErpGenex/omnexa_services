@@ -32,7 +32,8 @@ def apply_escalation_rules():
 	# Apply configured escalation rules on breached / open tickets
 	rules = frappe.get_all(
 		"Service Escalation Rule",
-		filters={"is_active": 1},
+		filters={"is_active": 1
+	},
 		fields=["name", "company", "branch", "priority", "when_sla_breached", "assign_to", "set_status"],
 		order_by="modified desc",
 	)

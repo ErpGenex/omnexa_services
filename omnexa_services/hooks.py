@@ -16,7 +16,7 @@ add_to_apps_screen = [
 		"name": "omnexa_services",
 		"logo": "/assets/omnexa_services/logo.png",
 		"title": "Services",
-		"route": "/app/services",
+		"route": "/app/services"
 	}
 ]
 
@@ -123,8 +123,8 @@ permission_query_conditions = {
 	"Service SLA Policy": "omnexa_services.permissions.service_sla_policy_query_conditions",
 	"Service Contract": "omnexa_services.permissions.service_contract_query_conditions",
 	"Service Ticket": "omnexa_services.permissions.service_ticket_query_conditions",
-	"Service Timesheet": "omnexa_services.permissions.service_timesheet_query_conditions",
-}
+	"Service Timesheet": "omnexa_services.permissions.service_timesheet_query_conditions"
+	}
 #
 # has_permission = {
 # 	"Event": "frappe.desk.doctype.event.event.has_permission",
@@ -145,26 +145,25 @@ permission_query_conditions = {
 doc_events = {
 	"Service Definition": {
 		"before_validate": "omnexa_services.permissions.populate_company_branch_from_user_context",
-		"validate": "omnexa_services.permissions.enforce_branch_access_for_doc",
+		"validate": "omnexa_services.permissions.enforce_branch_access_for_doc"
 	},
 	"Service SLA Policy": {
 		"before_validate": "omnexa_services.permissions.populate_company_branch_from_user_context",
-		"validate": "omnexa_services.permissions.enforce_branch_access_for_doc",
+		"validate": "omnexa_services.permissions.enforce_branch_access_for_doc"
 	},
 	"Service Contract": {
 		"before_validate": "omnexa_services.permissions.populate_company_branch_from_user_context",
 		"validate": "omnexa_services.permissions.enforce_branch_access_for_doc",
-		"on_submit": "omnexa_services.revenue.ensure_revenue_schedule_for_contract",
+		"on_submit": "omnexa_services.revenue.ensure_revenue_schedule_for_contract"
 	},
 	"Service Ticket": {
 		"before_validate": "omnexa_services.permissions.populate_company_branch_from_user_context",
-		"validate": "omnexa_services.permissions.enforce_branch_access_for_doc",
+		"validate": "omnexa_services.permissions.enforce_branch_access_for_doc"
 	},
 	"Service Timesheet": {
 		"before_validate": "omnexa_services.permissions.populate_company_branch_from_user_context",
-		"validate": "omnexa_services.permissions.enforce_branch_access_for_doc",
-	},
-}
+		"validate": "omnexa_services.permissions.enforce_branch_access_for_doc"}
+	}
 
 scheduler_events = {
 	"hourly": [
@@ -240,22 +239,22 @@ before_request = ["omnexa_services.license_gate.before_request"]
 
 # user_data_fields = [
 # 	{
-# 		"doctype": "{doctype_1}",
-# 		"filter_by": "{filter_by}",
-# 		"redact_fields": ["{field_1}", "{field_2}"],
+# 		"doctype": "{}",
+# 		"filter_by": "{}",
+# 		"redact_fields": ["{}", "{}"],
 # 		"partial": 1,
 # 	},
 # 	{
-# 		"doctype": "{doctype_2}",
-# 		"filter_by": "{filter_by}",
+# 		"doctype": "{}",
+# 		"filter_by": "{}",
 # 		"partial": 1,
 # 	},
 # 	{
-# 		"doctype": "{doctype_3}",
+# 		"doctype": "{}",
 # 		"strict": False,
 # 	},
 # 	{
-# 		"doctype": "{doctype_4}"
+# 		"doctype": "{}"
 # 	}
 # ]
 

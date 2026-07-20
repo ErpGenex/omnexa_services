@@ -48,7 +48,8 @@ def create_ticket(
 	if not (doc.company and doc.branch):
 		frappe.throw("Customer Profile must have company and branch")
 	doc.insert(ignore_permissions=True)
-	return {"ticket": doc.name}
+	return {"ticket": doc.name
+	}
 
 @frappe.whitelist()
 def preview_sector_kpi(scenario: str | None = None, params: str | None = None) -> dict:

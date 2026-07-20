@@ -66,7 +66,8 @@ class ServiceTicket(Document):
 				self.sla_policy = frappe.db.get_value("Service Contract", self.service_contract, "sla_policy")
 		if not self.sla_policy:
 			self.sla_policy = frappe.db.get_value(
-				"Service SLA Policy", {"priority_level": self.priority, "is_active": 1, "company": self.company, "branch": self.branch}, "name"
+				"Service SLA Policy", {"priority_level": self.priority, "is_active": 1, "company": self.company, "branch": self.branch
+	}, "name"
 			)
 
 		if self.sla_policy and (not self.sla_response_due or not self.sla_resolution_due):

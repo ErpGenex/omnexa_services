@@ -52,6 +52,8 @@ def execute(filters=None):
 
 def _columns():
 	return [
-		{"label": _("Period"), "fieldname": "period", "fieldtype": "Data", "width": 130},
-		{"label": _("Revenue"), "fieldname": "revenue", "fieldtype": "Currency", "width": 150},
+		{"label": _("Period"), "fieldname": "period", "fieldtype": "Data", "width": 130
+	},
+		{"label": _("Revenue"), "fieldname": "revenue", "fieldtype": "Currency", "width": 150
+	},
 	]

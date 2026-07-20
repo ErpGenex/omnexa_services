@@ -42,15 +42,16 @@ def create_service_invoice_from_contract(contract_name: str):
 			"item_code": service.billing_item,
 			"qty": 1,
 			"rate": rate,
-			"description": f"Service billing for contract {contract.name}",
-		},
+			"description": f"Service billing for contract {contract.name}"
+	},
 	)
 	sales.insert(ignore_permissions=True)
 	sales.submit()
 
 	sinv.db_set("sales_invoice", sales.name, update_modified=False)
 	sinv.db_set("status", "Billed", update_modified=False)
-	return {"service_invoice": sinv.name, "sales_invoice": sales.name}
+	return {"service_invoice": sinv.name, "sales_invoice": sales.name
+	}
 
 
 def create_sales_invoice_for_milestone(contract_name: str, milestone_rowname: str):
@@ -85,10 +86,11 @@ def create_sales_invoice_for_milestone(contract_name: str, milestone_rowname: st
 			"item_code": service.billing_item,
 			"qty": 1,
 			"rate": rate,
-			"description": f"Milestone: {milestone.milestone_title} (Contract {contract.name})",
-		},
+			"description": f"Milestone: {milestone.milestone_title} (Contract {contract.name})"
+	},
 	)
 	sales.insert(ignore_permissions=True)
 	sales.submit()
-	return {"sales_invoice": sales.name}
+	return {"sales_invoice": sales.name
+	}
 
