@@ -84,7 +84,7 @@ add_to_apps_screen = [
 before_install = "omnexa_services.omnexa_services.install.enforce_supported_frappe_version"
 before_migrate = "omnexa_services.omnexa_services.install.enforce_supported_frappe_version"
 # after_install = "omnexa_services.omnexa_services.install.after_install"
-after_install = "omnexa_services.setup.ensure_services_kpi_cards"
+# after_install intentionally disabled: KPI cards are synced by workspace patches/migrate.
 
 # Uninstallation
 # ------------
@@ -276,4 +276,3 @@ before_request = ["omnexa_services.license_gate.before_request"]
 # ------------
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
-
