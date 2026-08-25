@@ -31,27 +31,35 @@ def create_service_invoice_from_contract(contract_name: str):
 	sinv.amount = rate
 	sinv.insert(ignore_permissions=True)
 
-	sales = frappe.new_doc("Sales Invoice")
-	sales.company = contract.company
-	sales.customer = linked_customer
-	sales.posting_date = posting_date
-	sales.due_date = posting_date
-	sales.append(
-		"items",
-		{
-			"item_code": service.billing_item,
-			"qty": 1,
-			"rate": rate,
-			"description": f"Service billing for contract {contract.name}"
-	},
-	)
-	sales.insert(ignore_permissions=True)
-	sales.submit()
+	from omnexa_core.omnexa_core.integration_bridge import create_sales_invoice, require_ok
 
-	sinv.db_set("sales_invoice", sales.name, update_modified=False)
+	result = create_sales_invoice(
+		{
+			"company": contract.company,
+			"branch": contract.branch,
+			"customer": linked_customer,
+			"posting_date": str(posting_date),
+			"due_date": str(posting_date),
+			"items": [
+				{
+					"item_code": service.billing_item,
+					"qty": 1,
+					"rate": rate,
+					"description": f"Service billing for contract {contract.name}",
+				}
+			],
+			"reference_doctype": "Service Contract",
+			"reference_name": contract.name,
+		},
+		source_app="omnexa_services",
+		idempotency_key=f"svc-contract-{contract.name}",
+		submit=True,
+	)
+	sales_name = require_ok(result, title=_("Billing"))
+
+	sinv.db_set("sales_invoice", sales_name, update_modified=False)
 	sinv.db_set("status", "Billed", update_modified=False)
-	return {"service_invoice": sinv.name, "sales_invoice": sales.name
-	}
+	return {"service_invoice": sinv.name, "sales_invoice": sales_name}
 
 
 def create_sales_invoice_for_milestone(contract_name: str, milestone_rowname: str):
@@ -75,22 +83,30 @@ def create_sales_invoice_for_milestone(contract_name: str, milestone_rowname: st
 	posting_date = getdate(today())
 	rate = flt(milestone.amount)
 
-	sales = frappe.new_doc("Sales Invoice")
-	sales.company = contract.company
-	sales.customer = linked_customer
-	sales.posting_date = posting_date
-	sales.due_date = posting_date
-	sales.append(
-		"items",
+	from omnexa_core.omnexa_core.integration_bridge import create_sales_invoice, require_ok
+
+	result = create_sales_invoice(
 		{
-			"item_code": service.billing_item,
-			"qty": 1,
-			"rate": rate,
-			"description": f"Milestone: {milestone.milestone_title} (Contract {contract.name})"
-	},
+			"company": contract.company,
+			"branch": contract.branch,
+			"customer": linked_customer,
+			"posting_date": str(posting_date),
+			"due_date": str(posting_date),
+			"items": [
+				{
+					"item_code": service.billing_item,
+					"qty": 1,
+					"rate": rate,
+					"description": f"Milestone: {milestone.milestone_title} (Contract {contract.name})",
+				}
+			],
+			"reference_doctype": "Service Contract",
+			"reference_name": contract.name,
+		},
+		source_app="omnexa_services",
+		idempotency_key=f"svc-milestone-{contract.name}-{milestone_rowname}",
+		submit=True,
 	)
-	sales.insert(ignore_permissions=True)
-	sales.submit()
-	return {"sales_invoice": sales.name
-	}
+	sales_name = require_ok(result, title=_("Billing"))
+	return {"sales_invoice": sales_name}
 
