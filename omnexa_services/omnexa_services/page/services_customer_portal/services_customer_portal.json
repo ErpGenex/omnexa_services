@@ -1,26 +1,16 @@
 {
- "content": null,
- "creation": "2026-08-25 17:59:14.138594",
- "docstatus": 0,
- "doctype": "Page",
- "idx": 0,
- "modified": "2026-08-25 19:03:27.607859",
- "modified_by": "Administrator",
- "module": "Omnexa Services",
- "name": "services-customer-portal",
- "owner": "Administrator",
- "page_name": "services-customer-portal",
- "roles": [
-  {
-   "role": "System Manager"
-  },
-  {
-   "role": "Company Admin"
-  }
- ],
- "script": null,
- "standard": "Yes",
- "style": null,
- "system_page": 0,
- "title": "Customer Portal"
+	"doctype": "Page",
+	"module": "Omnexa Services",
+	"name": "services-customer-portal",
+	"page_name": "services-customer-portal",
+	"standard": "Yes",
+	"title": "Customer Portal",
+	"roles": [
+		{
+			"role": "System Manager"
+		},
+		{
+			"role": "Company Admin"
+		}
+	]
 }

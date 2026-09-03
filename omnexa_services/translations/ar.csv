@@ -1,157 +1,501 @@
-Activities,Activities
-Activity Date,نشاط تاريخ
-Activity Date-Time,نشاط تاريخ - Time
-Activity Reference,نشاط Reference
-Activity Type,نشاط نوع
-Amount,مبلغ
-Apply Only When SLA Breached,Apply Only When SLA Breached
-Assign To (User),Assign إلى (مستخدم)
-Assigned To,Assigned إلى
-Assigned To is mandatory before resolving/closing a ticket.,Assigned إلى is mandatory before resolving closing a ticket.
-Assigned To is mandatory when ticket is assigned or in progress.,Assigned إلى is mandatory when ticket is assigned or in progress.
-At least one timesheet entry is required.,At least one timesheet قيد is required.
-Auto Assign,Auto Assign
-Auto Bill,Auto Bill
-Avg CSAT,متوسط CSAT
-Billing,فوترة
-Billing Cycle,فوترة Cycle
-Billing Item,فوترة صنف
-Billing Rate,فوترة معدل
+Accounting,المحاسبة
+Accounts Payable,الذمم الدائنة
+Accounts Receivable,الذمم المدينة
+Actions,إجراءات
+Active,نشط
+Activities,بند واجهة
+Activity Date,النشاط التاريخ
+Activity Date-Time,بند واجهة
+Activity Reference,النشاط المرجع
+Activity Type,النشاط النوع
+Admin,بند واجهة
+Administrator,المسؤول
+Advanced,بند واجهة
+Agriculture,الزراعة
+AI & Intelligence,الذكاء الاصطناعي والتحليلات
+All,الكل
+All activities,كل الأنشطة
+All branches,كل الفروع
+ALM,إدارة الأصول والخصوم
+Amount,المبلغ
+Analytics Dashboard,لوحة التحليلات
+API,واجهة API
+Apply Only When SLA Breached,SLA — بند واجهة
+Asset Insurance,تأمين الأصول
+Assign To (User),بند واجهة
+Assigned,بند واجهة
+Assigned To,مُسند إلى
+Assigned To is mandatory before resolving/closing a ticket.,بند واجهة
+Assigned To is mandatory when ticket is assigned or in progress.,بند واجهة
+Assigned To Me,المُسند إليّ
+At least one timesheet entry is required.,بند واجهة
+Attachments,المرفقات
+Audit,التدقيق
+Auto Assign,بند واجهة
+Auto Bill,بند واجهة
+Avg CSAT,بند واجهة
+Balance Sheet,الميزانية العمومية
+Bank Unmatched Statement Lines,بنود كشف بنك غير مطابقة
+Beginner,بند واجهة
+Billed,بند واجهة
+Billing,الفوترة
+Billing & collections,الفوترة والتحصيل
+Billing Cycle,بند واجهة
+Billing Item,الفوترة الصنف
+Billing Rate,الفوترة السعر
+Bookings & registration,الحجوزات والتسجيل
+BOQ,جدول الكميات
 Branch,الفرع
-Branch belongs to another company.,فرع belongs إلى another شركة.
-Breached,Breached
+Branch belongs to another company.,بند واجهة
+Breached,بند واجهة
+Budget & cost control,الميزانية وضبط التكلفة
+Buy,المشتريات
+Call,بند واجهة
+CAM & recoveries,المصاريف المشتركة والاستردادات
+CAM Budget,ميزانية المصاريف المشتركة
+Campaign ROI,عائد الحملة
+Cancel,إلغاء
+Cancelled,ملغى
+Car Rental,تأجير السيارات
+Card Break,قسم
 Category,الفئة
-Channel,Channel
-Classification Code,Classification كود
+Channel,قناة
+Chart,مخطط
+Chart of Accounts,دليل الحسابات
+Classification Code,رمز التصنيف
+Closed,مغلق
+Commission Accrual,استحقاق العمولات
+Commission Schedule,جدول العمولات
 Company,الشركة
-Company is required.,شركة is required.
-Compliance %,امتثال%
-Contract,العقد
-Contract Owner,عقد Owner
-Contract Start Date is mandatory.,عقد بداية تاريخ is mandatory.
-Created On,Created On
-Customer Profile,عميل ملف
-Customer Profile is mandatory.,عميل ملف is mandatory.
-Customer Profile is missing Linked Accounting Customer.,عميل ملف is missing Linked محاسبة عميل.
-Customer Satisfaction (CSAT),عميل Satisfaction (CSAT)
-Default Rate,افتراضي معدل
-Default Skill,افتراضي Skill
-Delivery Type,Delivery نوع
+Company is required.,الشركة is مطلوب.
+Completed,مكتمل
+Compliance %,امتثال %
+Compliance checks complete,اكتملت فحوصات الامتثال
+Compliance Exceptions,استثناءات الامتثال
+Compliance Exceptions (IFRS),استثناءات الامتثال (IFRS)
+Compliance Exceptions (Tax),استثناءات الامتثال (ضريبي)
+Compliance Exceptions Dashboard,لوحة استثناءات الامتثال
+Compliance Reports,تقارير الامتثال
+Construction,المقاولات
+Construction & Engineering,المقاولات والهندسة
+Consumer Finance,التمويل الاستهلاكي
+Contract,بند واجهة
+Contract Owner,بند واجهة
+Contract Start Date is mandatory.,بند واجهة
+Contractor,بند واجهة
+Core ERP,ERP الأساسي
+Cost Center,مركز التكلفة
+Country,الدولة
+Create,إنشاء
+Create or review your first **Service Definition** record from this workspace.,أنشئ أو راجع أول سجل **بند واجهة** من مساحة العمل هذه.
+Create or review your first **Service Resource** record from this workspace.,أنشئ أو راجع أول سجل **بند واجهة** من مساحة العمل هذه.
+Create or review your first **Service Skill** record from this workspace.,أنشئ أو راجع أول سجل **بند واجهة** من مساحة العمل هذه.
+Create or review your first **Service SLA Policy** record from this workspace.,أنشئ أو راجع أول سجل **SLA — بند واجهة** من مساحة العمل هذه.
+Create or review your first **User Branch Access** record from this workspace.,أنشئ أو راجع أول سجل **مستخدم الفرع الوصول** من مساحة العمل هذه.
+Created On,تاريخ الإنشاء
+Credit Engine,محرك الائتمان
+Credit Risk,مخاطر الائتمان
+Critical,حرج
+CRM,إدارة العملاء
+Cross-module operations,عمليات متكاملة
+Currency,العملة
+Custom Documents,المستندات المخصصة
+Customer,العميل
+Customer Portal,العميل بوابة
+Customer Profile,العميل الملف الشخصي
+Customer Profile is mandatory.,بند واجهة
+Customer Profile is missing Linked Accounting Customer.,بند واجهة
+Customer Satisfaction (CSAT),بند واجهة
+Dashboard,لوحة معلومات
+Default Rate,السعر الافتراضي
+Default Skill,بند واجهة
+Delete,حذف
+Delivery Type,بند واجهة
 Description,الوصف
+Design & quantities (BOQ),التصميم والكميات (جدول الكميات)
+Desk,المكتب
 Details,التفاصيل
+Development Budget,ميزانية التطوير
+Development Project,مشروع تطوير
+Development Project Register,سجل مشاريع التطوير
+Development project register,سجل مشاريع التطوير
+Digital Channel,رقمي قناة
+Documents & Integration,المستندات والتكامل
+Draft,مسودة
 Due Date,تاريخ الاستحقاق
+E-Invoice,الفاتورة الإلكترونية
+Edit,تعديل
+Education,التعليم
+Email,البريد الإلكتروني
 Employee,الموظف
-End Date,تاريخ الانتهاء
-End Date cannot be before Start Date.,نهاية تاريخ cannot be before بداية تاريخ.
-Entries,Entries
-Escalation Role,Escalation دور
-Filters,Filters
-First Response On,First Response On
-First Response On is mandatory before resolving/closing a ticket.,First Response On is mandatory before resolving closing a ticket.
-Hours,Hours
-Hours Spent,Hours Spent
-Invoice Reference,فاتورة Reference
+End Date,النهاية التاريخ
+End Date cannot be before Start Date.,بند واجهة
+Engineering Consulting,الاستشارات الهندسية
+Entries,بند واجهة
+Erpgenex Property Mgmt,إدارة العقارات
+Erpgenex Realestate Dev,التطوير العقاري
+Erpgenex Realestate Sales,التسويق العقاري
+ERPGENEX — Core ERP,ERPGENEX — ERP الأساسي
+ERPGENEX — Dashboard,ERPGENEX — لوحة المعلومات
+Escalated,بند واجهة
+Escalation Role,بند واجهة
+Escalation Rule,قاعدة تصعيد الإيجار
+Event,حدث
+Executive Dashboard,لوحة المدير التنفيذية
+Expert,بند واجهة
+Expired,منتهي
+Explore this workspace,استكشف مساحة العمل
+External Vendor,بند واجهة
+Factoring,التخصيم
+Field PWA,تطبيق الميدان
+Filters,المرشحات
+Finance Control Exceptions,استثناءات الضوابط المالية
+Finance Control Violations,مخالفات الضوابط المالية
+Finance Controls,الضوابط المالية
+Finance Desk,بند واجهة
+Finance Engine,محرك التمويل
+Finance Group,المجموعة المالية
+Finance SoD Blocks,حظر فصل المهام (SoD)
+Finance Workcenter,مركز عمل المالية
+First Response On,بند واجهة
+First Response On is mandatory before resolving/closing a ticket.,بند واجهة
+Fixed Assets,الأصول الثابتة
+Fixed Price,بند واجهة
+Form,نموذج
+Further,المزيد
+General Ledger,دفتر الأستاذ العام
+Get started with Service Definition,بند واجهة
+Get started with Service Resource,بند واجهة
+Get started with Service Skill,بند واجهة
+Get started with Service SLA Policy,SLA — بند واجهة
+Get started with User Branch Access,بند واجهة
+GL Account,حساب GL
+Global Defaults,الإعدادات العامة
+Governance,الحوكمة
+Governance Overview,نظرة عامة على الحوكمة
+Guest,زائر
+Handover & defects (snagging),التسليم والعيوب
+Handover Package,حزمة التسليم
+Healthcare,الرعاية الصحية
+Help,مساعدة
+High,مرتفع
+Home,الرئيسية
+Hours,بند واجهة
+Hours Spent,بند واجهة
+HR,الموارد البشرية
+Hybrid,بند واجهة
+IFRS 16 Liability,التزام الإيجار IFRS 16
+In Progress,قيد التنفيذ
+Industry Solutions,حلول القطاعات
+Insights,رؤى وتحليلات
+Intermediate,بند واجهة
+Inventory & development context,المخزون وسياق التطوير
+Inventory KPI Dashboard,لوحة مؤشرات المخزون
+Inventory KPIs,مؤشرات المخزون
+Inventory Low Stock Items,أصناف منخفضة المخزون
+Inventory Reorder Needed,أصناف تحتاج إعادة طلب
+Inventory Stock Items,أصناف المخزون
+Invoice Reference,فاتورة المرجع
+Invoiced,مُفوتر
 Is Active,Is نشط
-Last Billed On,Last Billed On
-Leave empty to match any,Leave empty إلى match any
-Level,Level
-Line Reference,Line Reference
-Load omnexa_core vertical portal desk,Load omnexa أساسي vertical بوابة desk
-Load omnexa_core vertical workcenter kit,Load omnexa أساسي vertical workcenter kit
-Max Open Tickets,أقصى مفتوح Tickets
-Milestone,Milestone
-Milestone Reference,Milestone Reference
-Milestones,Milestones
-Next Billing Date,Next فوترة تاريخ
-Notes,Notes
-Omnexa Services,Omnexa خدمات
-Operations,العمليات
+Item,الصنف
+Journal Entry,قيد يومية
+Jump to the **Executive Dashboard** page.,انتقل إلى صفحة **لوحة المدير التنفيذية**.
+Jump to the **Service Portal** page.,انتقل إلى صفحة **بند واجهة**.
+Land & project charter,الأرض وميثاق المشروع
+Land Parcel,قطعة أرض
+Language,اللغة
+Last Billed On,بند واجهة
+Last Month,الشهر الماضي
+Last Week,الأسبوع الماضي
+Lead acquisition & qualification,اكتساب العملاء وتأهيلهم
+Leasing & occupancy (IFRS 16 / IPSAS rent),التأجير والإشغال (IFRS 16 / IPSAS)
+Leasing Finance,التمويل التأجيري
+Leasing Mandate,تفويض تأجير
+Leave empty to match any,بند واجهة
+Level,بند واجهة
+Line Reference,بند واجهة
+List,قائمة
+Login,تسجيل الدخول
+Logout,تسجيل الخروج
+Low,منخفض
+Maintenance — service requests,الصيانة — طلبات الخدمة
+Management Agreement,اتفاقية إدارة
+Manual,يدوي
+Manufacturing,التصنيع
+Max Open Tickets,بند واجهة
+Medium,متوسط
+Meeting,بند واجهة
+Menu,القائمة
+Milestone,بند واجهة
+Milestone Reference,بند واجهة
+Milestones,بند واجهة
+Monthly,شهري
+Mortgage Finance,التمويل العقاري
+My work,عملي
+Name,الاسم
+New,جديد
+Next Billing Date,التالي الفوترة التاريخ
+None,لا شيء
+Notes,ملاحظات
+Notifications,الإشعارات
+Number Card,بطاقة رقمية
+Occupancy,الإشغال
+Omnexa Accounting Settings,إعدادات محاسبة Omnexa
+Omnexa Marketplace Settings,إعدادات سوق Omnexa
+Omnexa Purchase Settings,إعدادات مشتريات Omnexa
+Omnexa Sales Settings,إعدادات مبيعات Omnexa
+Omnexa Settings,إعدادات Omnexa
+Omnexa Stock Settings,إعدادات مخزون Omnexa
+One-time,بند واجهة
+One-time Service,بند واجهة
+Onsite,بند واجهة
+Open,مفتوح
+Open Executive Dashboard,لوحة بند واجهة
+Open report Compliance Exceptions Dashboard,فتح تقرير لوحة استثناءات الامتثال
+Open Service Portal,بند واجهة
+Operating Scenarios,سيناريوهات التشغيل
+Operational Risk,المخاطر التشغيلية
+Operations Desk,بند واجهة
+Other,أخرى
+Over Time,بند واجهة
+Overdue,متأخر
 Overview,نظرة عامة
-Penalty %,Penalty%
-Period,Period
-Period (YYYY-MM),Period (YYYY - MM)
-Period End,Period نهاية
-Period Start,Period بداية
-Policy Name,سياسة اسم
-Policy Reference,سياسة Reference
-Posting Date,Posting تاريخ
-Pricing Model,Pricing Model
-Priority,Priority
-Priority Level,Priority Level
-Rated tickets,Rated tickets
-Recognition Method (IFRS 15),Recognition Method (IFRS 15)
-Reopened Count,Reopened عدد
-Reporting,Reporting
-Required Skill,Required Skill
-Resolution Time (Hours),Resolution Time (Hours)
-Resolved On,Resolved On
-Resource Name,Resource اسم
-Resource Owner,Resource Owner
-Resource Type,Resource نوع
-Response Time (Hours),Response Time (Hours)
-Revenue,الإيرادات
-Revenue Recognition (IFRS 15),إيرادات Recognition (IFRS 15)
-Revenue Schedule Rows,إيرادات Schedule Rows
-Rule Name,Rule اسم
+Owner reporting & trust accounting,تقارير الملاك والحسابات الائتمانية
+Owner Statement,كشف حساب المالك
+Payment Entry,سند قبض/صرف
+Payment Plan Item,بند خطة السداد
+Penalty %,بند واجهة
+Pending,قيد الانتظار
+Period,الفترة
+Period (YYYY-MM),بند واجهة
+Period End,الفترة النهاية
+Period Start,الفترة بدء
+Permit Milestone,معلم التصريح
+Planned,مخطط
+Platform & Administration,المنصة والإدارة
+PMC Lease Liability Schedule,جدول التزام الإيجار IFRS 16
+PMC Leasing Mandate,تفويض تأجير
+PMC Management Agreement,اتفاقية إدارة
+PMC Management Fee Summary,ملخص رسوم الإدارة
+PMC Occupancy Summary,ملخص الإشغال
+PMC Owner Statement,كشف حساب المالك
+PMC Owner Statement Register,سجل كشوف الملاك
+PMC Property,عقار
+PMC Property Unit,وحدة عقارية
+PMC Rent Aging,أعمار الإيجارات
+PMC Rent Billing Register,سجل فوترة الإيجار
+PMC Rent Roll,سجل الإيجارات
+PMC Rental Contract Register,سجل عقود الإيجار
+Point in Time,بند واجهة
+Policy Name,سياسة الاسم
+Policy Reference,مرجع الوثيقة
+Portal,بوابة
+Portfolio & asset registry,المحفظة وسجل الأصول
+Posting Date,ترحيل التاريخ
+Pricing Model,بند واجهة
+Priority,الأولوية
+Priority Level,بند واجهة
+Profile,الملف الشخصي
+Profit and Loss,الأرباح والخسائر
+Project EV,القيمة المكتسبة للمشروع
+Project-based Service,بند واجهة
+Projects & Services,المشاريع والخدمات
+Projects PM,إدارة المشاريع
+Property,عقار
+Property Management,إدارة العقارات
+Property Sales Booking Register,سجل حجوزات البيع
+Property Sales Lead,عميل مبيعات عقارية
+Purchase Invoice,فاتورة شراء
+Purchase Register,سجل المشتريات
+Quarterly,ربع سنوي
+Rated tickets,بند واجهة
+RE BOQ,جدول كميات التطوير
+RE Development,التطوير العقاري
+RE Handover Package,حزمة التسليم
+RE Marketing,التسويق العقاري
+RE Permit Milestone,معلم التصريح
+RE Project EV,القيمة المكتسبة للمشروع
+RE Subcontract Commitment,التزام مقاول باطن
+RE Unit Inventory,مخزون وحدات التطوير
+RE unit inventory (sales),مخزون وحدات البيع
+RE Unit Inventory Overview,نظرة عامة على مخزون الوحدات
+Real Estate,العقارات
+Recognition Method (IFRS 15),IFRS — بند واجهة
+Recognized,بند واجهة
+Recurring Service (Subscription),بند واجهة
+Refresh,تحديث
+Reload,إعادة تحميل
+Remote,عن بُعد
+Rent Aging,أعمار الإيجارات
+Rent billing register,سجل فوترة الإيجار
+Rent Billing Run,تشغيل فوترة الإيجار
+Rent Roll,سجل الإيجارات
+Rental Contract,عقد إيجار
+Rental contract register,سجل عقود الإيجار
+Reopened Count,بند واجهة
+Report,تقرير
+Required Skill,بند واجهة
+Reservation register,سجل الحجوزات
+Reservations & unit holds,الحجوزات وحجز الوحدات
+Resolution Time (Hours),بند واجهة
+Resolved,محلول
+Resolved On,محلول في
+Resource Name,بند واجهة
+Resource Owner,بند واجهة
+Resource Type,بند واجهة
+Response Time (Hours),بند واجهة
+Restaurant,المطاعم
+"Return here for shortcuts, charts, and lists for **Audit & Compliance**.",ارجع هنا للاختصارات والمخططات والقوائم لـ **التدقيق والامتثال**.
+"Return here for shortcuts, charts, and lists for **Core ERP**.",ارجع هنا للاختصارات والمخططات والقوائم لـ **ERP الأساسي**.
+"Return here for shortcuts, charts, and lists for **Services**.",ارجع هنا للاختصارات والمخططات والقوائم لـ **الخدمات**.
+Revenue,الإيراد
+Revenue Recognition (IFRS 15),IFRS — بند واجهة
+Revenue Schedule Rows,بند واجهة
+Rule Name,اسم القاعدة
+Sales Booking,حجز بيع
+Sales booking register,سجل حجوزات البيع
+Sales Commission Accrual,استحقاق عمولات المبيعات
+Sales Commission Schedule,جدول عمولات المبيعات
 Sales Invoice,فاتورة مبيعات
-Schedule End,Schedule نهاية
-Schedule Reference,Schedule Reference
-Schedule Start,Schedule بداية
-Service,خدمة
-Service Contract,خدمة عقد
-Service Contract Milestone,خدمة عقد Milestone
-Service Definition,خدمة Definition
-Service Escalation Rule,خدمة Escalation Rule
-Service Invoice,خدمة فاتورة
-Service Name,خدمة اسم
-Service Portal,خدمة بوابة
-Service Resource,خدمة Resource
-Service Resource Skill,خدمة Resource Skill
-Service Revenue Schedule,خدمة إيرادات Schedule
-Service Revenue Schedule Row,خدمة إيرادات Schedule Row
-Service Skill,خدمة Skill
-Service SLA Policy,خدمة SLA سياسة
-Service Ticket,خدمة Ticket
-Service Ticket Activity,خدمة Ticket نشاط
-Service Timesheet,خدمة Timesheet
-Service Timesheet Entry,خدمة Timesheet قيد
-Service Type,خدمة نوع
-Services,خدمات
-Services Workcenter,خدمات Workcenter
-services-analytics-dashboard,خدمات - تحليلات - لوحة معلومات
-services-customer-portal,خدمات - عميل - بوابة
-services-executive-dashboard,خدمات - تنفيذي - لوحة معلومات
-services-finance-desk,خدمات - مالية - desk
-services-operations-desk,خدمات - عمليات - desk
-Set Billing Item on Service Definition before billing.,Set فوترة صنف on خدمة Definition before فوترة.
-Set Status,Set حالة
-Setup,تهيئة
-Skill,Skill
-Skill Code,Skill كود
-Skill Level,Skill Level
-Skill Name,Skill اسم
-Skills,Skills
-SLA Breach Risk %,SLA Breach مخاطر%
-SLA Breached,SLA Breached
+Sales Lead,عميل محتمل
+Sales Portal,بوابة المبيعات
+Sales Register,سجل المبيعات
+Save,حفظ
+Schedule End,الجدول النهاية
+Schedule Reference,الجدول المرجع
+Schedule Start,الجدول بدء
+Search or type a command,ابحث أو اكتب أمرًا
+Search or type a command ({0}),ابحث أو اكتب أمرًا ({0})
+Sell,المبيعات
+Service,بند واجهة
+Service Contract,بند واجهة
+Service Contract Milestone,بند واجهة
+Service Contract Register,سجل بند واجهة
+Service CSAT Summary,ملخص بند واجهة
+Service Definition,بند واجهة
+Service Definition Register,سجل بند واجهة
+Service Escalation Rule,بند واجهة
+Service Escalation Rule Register,سجل بند واجهة
+Service Invoice,بند واجهة
+Service Invoice Register,سجل بند واجهة
+Service Manager,بند واجهة
+Service Name,بند واجهة
+Service Resource,بند واجهة
+Service Resource Register,سجل بند واجهة
+Service Resource Skill,بند واجهة
+Service Revenue Schedule,بند واجهة
+Service Revenue Schedule Register,سجل بند واجهة
+Service Revenue Schedule Row,بند واجهة
+Service Revenue Summary,ملخص بند واجهة
+Service Skill,بند واجهة
+Service Skill Register,سجل بند واجهة
+Service SLA Policy,SLA — بند واجهة
+Service SLA Policy Register,سجل SLA — بند واجهة
+Service Ticket,بند واجهة
+Service Ticket Activity,بند واجهة
+Service Ticket Register,سجل بند واجهة
+Service Timesheet,بند واجهة
+Service Timesheet Entry,بند واجهة
+Service Timesheet Hours Summary,ملخص بند واجهة
+Service Timesheet Register,سجل بند واجهة
+Service Type,نوع الخدمة
+Services,الخدمات
+Services Workcenter,الخدمات مركز العمل
+Set Billing Item on Service Definition before billing.,بند واجهة
+Set Status,بند واجهة
+Settings,الإعدادات
+Shortcut,اختصار
+Skill,بند واجهة
+Skill Code,بند واجهة
+Skill Level,بند واجهة
+Skill Name,بند واجهة
+Skills,بند واجهة
+SLA Breach Risk %,SLA — بند واجهة
+SLA Breached,SLA — بند واجهة
 SLA Compliance,SLA امتثال
 SLA Policy,SLA سياسة
-SLA Policy is mandatory.,SLA سياسة is mandatory.
-SLA Resolution Due,SLA Resolution استحقاق
-SLA Response Due,SLA Response استحقاق
-Start Date,بداية تاريخ
+SLA Policy is mandatory.,SLA — بند واجهة
+SLA Resolution Due,SLA — بند واجهة
+SLA Response Due,SLA — بند واجهة
+SLA-based Pricing,SLA — بند واجهة
+SME Microfinance,التمويل متناهي الصغر
+SME Retail Finance,تمويل المنشآت والتجزئة
+Start Date,تاريخ البدء
 Status,الحالة
-Subject,Subject
-svc-executive-dashboard,svc - تنفيذي - لوحة معلومات
-Ticket Backlog,Ticket Backlog
-Ticket Owner,Ticket Owner
-Tickets,Tickets
-Timesheet Owner,Timesheet Owner
-Timesheets,Timesheets
+Stock,المخزون
+Subcontract,مقاول باطن
+Subject,الموضوع
+Submit,إرسال
+Subscription Pricing,بند واجهة
+Supplier,المورد
+Support Agent,مساندة وكيل
+Supporting Attachment,مرفق داعم
+System Manager,مدير النظام
+Task List,قائمة المهام
+Technician,بند واجهة
+This Month,هذا الشهر
+This Week,هذا الأسبوع
+Ticket Backlog,بند واجهة
+Ticket Owner,بند واجهة
+Ticket-based Service,بند واجهة
+Tickets,بند واجهة
+Tiered Pricing,بند واجهة
+Time & Material,بند واجهة و بند واجهة
+Timesheet Owner,بند واجهة
+Timesheets,بند واجهة
+Timezone,المنطقة الزمنية
+Today,اليوم
+ToDo,مهمة
 Total,الإجمالي
-Total Amount,إجمالي مبلغ
-Total Hours,إجمالي Hours
-Total hours,إجمالي hours
-Total hours must be greater than zero.,إجمالي hours must be greater than zero.
-User,المستخدم
-Vendor,Vendor
-Within SLA,Within SLA
+Total Amount,المبلغ الإجمالي
+Total Hours,بند واجهة
+Total hours,بند واجهة
+Total hours must be greater than zero.,يجب أن بند واجهة بند واجهة.
+Tourism,السياحة
+Trading,التجارة
+Trading & Manufacturing,التجارة والتصنيع
+Travel,بند واجهة
+Trial Balance,ميزان المراجعة
+Unit,وحدة
+Unit Inventory,مخزون الوحدات
+Unit inventory & sales readiness,مخزون الوحدات وجاهزية البيع
+Unit inventory overview,نظرة عامة على مخزون الوحدات
+Unit Reservation,حجز وحدة
+Unit Reservation Register,سجل حجز الوحدات
+Update,تحديث
+User,مستخدم
+Vehicle Finance,تمويل المركبات
+Vendor,بند واجهة
+Warehouse,المستودع
+Within SLA,SLA — بند واجهة
+Work,عمل
+Workspace,مساحة العمل
+Workspaces,مساحات العمل
+Yearly,بند واجهة
+Yesterday,أمس
+You are ready to work in Core ERP.,أنت جاهز للعمل في ERP الأساسي.
+✅ Handover,✅ التسليم
+🎯 CRM,🎯 إدارة العملاء
+🏗️ Projects,🏗️ المشاريع
+🏢 Organization,🏢 التنظيم والإعداد
+🏢 Organization & Setup,🏢 التنظيم والإعداد
+🏢 Portfolio,🏢 المحفظة العقارية
+👥 HR & Users,👥 الموارد البشرية والمستخدمون
+💰 Billing · Finance · ERP,💰 الفوترة · المالية · ERP
+💰 Commissions,💰 العمولات
+💰 Finance & ERP,💰 المالية · ERP
+💰 Owner & CAM,💰 المالك والمصاريف المشتركة
+📈 Reports,📈 التقارير
+📊 Analytics,📊 التحليلات
+📊 Dashboards,📊 لوحات المعلومات
+📊 Dashboards & Portals,📊 لوحات المعلومات والبوابات
+📊 Dashboards & portals,📊 لوحات المعلومات والبوابات
+📋 Commercial,📋 التجاري
+📋 Leasing,📋 التأجير
+📋 Operations,📋 العمليات
+📐 BOQ & inventory,📐 جدول الكميات والمخزون
+📦 Inventory & Supply,📦 المخزون والتوريد
+🔗 Integration,🔗 التكامل
+🚚 Field operations,🚚 العمليات الميدانية
+🛡️ Compliance,🛡️ الامتثال
